@@ -1,0 +1,53 @@
+/* styles/Chart.css */
+.chard {
+    padding: 10px;
+}
+
+/* styles/Chart.css */
+.skill-title {
+    position: relative;
+    display: block; /* Change to block to center text */
+    font-size: 30px; /* Ukuran font sesuai kebutuhan */
+    font-weight: bold; /* Setebal font */
+    color: #18222c; /* Warna teks */
+    text-align: center; /* Center the text */
+}
+
+.skill-title::after {
+    content: '';
+    display: block;
+    width: 50%; /* Lebar garis bawah */
+    height: 4px; /* Tinggi garis bawah */
+    background-color:rgba(34, 111, 189, 0.8) ; /* Warna garis */
+    margin: 5px auto 0; /* Margin atas dan bawah */
+    border-radius: 2px; /* Bulatkan sudut garis */
+}
+.dataChard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.revenueCard, .customerCard, .categoryCard {
+    background-color: #fff;
+    padding: 10px; /* Default padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 250px; /* Default minimum height */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .dataChard {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+    }
+
+    .revenueCard, .customerCard, .categoryCard {
+        min-height: 150px; /* Adjust the minimum height for smaller screens */
+        padding: 15px; /* Add some padding for better spacing on smaller screens */
+        width: 90%; /* Set width to a percentage for responsiveness */
+        margin: 10px auto; /* Center the cards with some margin */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow for a cleaner look */
+    }
+}

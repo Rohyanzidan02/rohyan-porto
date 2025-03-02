@@ -1,0 +1,194 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+        transform: translateY(20px); /* Mulai dari posisi lebih rendah */
+    }
+    to {
+        opacity: 1; /* Akhirnya menjadi terlihat */
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+#biodata {
+    padding: 20px;
+   
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan */
+    max-width: 800px; /* Lebar maksimum */
+    margin: auto; /* Pusatkan konten */
+}
+
+.profile {
+    background-color: balck; /* Warna latar belakang kartu */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Ruang di dalam kartu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.wrapper2 {
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.bio {
+    text-align: center; /* Pusatkan judul */
+    color: #333; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah */
+    font-family: "Kanit", sans-serif; /* Font yang digunakan */
+}
+
+.profile-image2 {
+    text-align: center; /* Pusatkan gambar */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+    cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
+    transition: transform 0.3s ease; /* Transisi untuk efek pembesaran */
+}
+
+.profile-image2 img {
+    width: 100px; /* Lebar gambar */
+    height: 100px; /* Tinggi gambar */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s ease; /* Transisi untuk efek pembesaran */
+}
+
+/* Efek pembesaran saat hover */
+.profile-image2:hover img {
+    transform: scale(1.5); /* Membesarkan gambar 1.5 kali saat hover */
+}
+
+.table {
+    width: 100%; /* Lebar tabel */
+    border-collapse: collapse; /* Menghilangkan jarak antara sel */
+}
+
+.table td {
+    padding: 10px; /* Ruang di dalam sel */
+    border-bottom: 1px solid #ddd; /* Garis bawah sel */
+    opacity: 0; /* Mulai dengan transparan */
+    animation: fadeIn 0.5s forwards; /* Tambahkan animasi */
+}
+
+.table td:nth-child(1) {
+    font-weight: bold; /* Teks tebal untuk kolom label */
+    color: #007bff; /* Warna teks untuk label */
+}
+
+hr {
+    margin: 20px 0; /* Jarak atas dan bawah untuk garis horizontal */
+    border: 0; /* Menghilangkan border default */
+    border-top: 1px solid #ddd; /* Garis horizontal */
+}
+/* Media query untuk responsivitas */
+@media only screen and (max-width: 768px) {
+    .table td {
+        text-align: left; /* Rata kiri untuk teks dalam sel */
+    }
+}
+
+/* kuliah */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+        transform: translateY(20px); /* Mulai dari posisi lebih rendah */
+    }
+    to {
+        opacity: 1; /* Akhirnya menjadi terlihat */
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+
+
+.profile, .profile-kuliah {
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 20px; /* Ruang di dalam kartu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    margin-bottom: 20px; /* Jarak antara kartu */
+    animation: fadeIn 0.5s forwards; /* Tambahkan animasi */
+}
+
+/* cd download button */
+/* Tambahkan di akhir file CSS */
+.cv-download-button {
+    padding: 12px 25px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Centering horizontal */
+  display: flex; /* Mengaktifkan flexbox */
+  justify-content: center; /* Centering konten */
+    
+  }
+  
+  .cv-download-button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .cv-download-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cv-download-button {
+      width: 100%;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .Link-skripsi {
+    display: inline-flex; /* Use inline-flex to allow for alignment and spacing */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove the underline */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1rem; /* Set a larger font size */
+    padding: 5px; /* Add padding for a button-like appearance */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #007bff; /* Button background color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    width: 170%; /* Make the anchor full width */
+    margin: 10px; /* Centering horizontally */
+    text-align: center;
+  
+}
+
+.Link-skripsi:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    
+}
+
+.Link-skripsi:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Link-skripsi {
+        padding: 5px ; /* Adjust padding for smaller screens */
+        margin: center;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        
+    }
+}
+  

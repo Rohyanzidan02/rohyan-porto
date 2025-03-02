@@ -1,0 +1,29 @@
+.scroll-to-top {
+    position: fixed; /* Keep it fixed to the viewport */
+    right: 20px; /* Position from the right */
+    bottom: 20px; /* Position from the bottom */
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it is above other elements */
+    width: 30px; /* Width of the button */
+    height: 30px; /* Height of the button */
+    background-color: rgba(128, 128, 128, 0.7); /* Gray background */
+    border-radius: 50%; /* Make it circular */
+    display: flex; /* Center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.scroll-to-top:hover {
+    opacity: 1; /* Full opacity on hover */
+    background-color: rgb(0, 247, 255); /* Change to blue on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+.scroll-to-top svg {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+    color: white; /* Change icon color to white for contrast */
+    object-fit: contain; /* Maintain aspect ratio */
+}

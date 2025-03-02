@@ -1,0 +1,170 @@
+.contact1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+h2 {
+text-align: center;
+}
+form {
+    flex: 1;
+    margin-right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form > h2 {
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mess {
+    height: 100px;
+}
+
+.inputd {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Mengatur lebar tombol agar 100% dari elemen induknya */
+    height: 50px; /* Mengatur tinggi tombol sesuai kebutuhan */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar dan tinggi */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* social media */
+.social-container {
+    display: flex; /* Menggunakan Flexbox untuk kontainer */
+    justify-content: space-between; /* Mengatur jarak antar elemen */
+    flex-wrap: wrap; /* Membuat elemen membungkus jika tidak muat dalam satu baris */
+    gap: 20px; /* Menambahkan jarak antar elemen */
+}
+
+.social-media {
+    flex: 1; /* Mengatur elemen untuk mengambil ruang yang sama */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 250px; /* Menentukan lebar minimum untuk elemen */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+.social-media h2 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Ukuran font yang lebih besar */
+    color: #333; /* Warna teks yang lebih gelap */
+}
+
+.social-media p {
+    margin-bottom: 15px;
+    font-size: 16px; /* Ukuran font yang lebih besar */
+    color: #666; /* Warna teks yang lebih terang */
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Mengatur daftar menjadi flex */
+    justify-content: center; /* Mengatur ikon agar berada di tengah */
+}
+
+.social-media li {
+    margin: 0 10px; /* Menambahkan jarak horizontal antar ikon */
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 24px; /* Ukuran ikon yang lebih besar */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.social-media a:hover {
+    color: #0056b3; /* Warna saat hover */
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    form {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add space below form */
+    }
+
+    .social-media {
+        width: 100%; /* Full width for social media on small screens */
+    }
+}
+
+/* Existing styles... */
+
+.divider {
+    width: 1px; /* Width of the divider */
+    background-color: #ccc; /* Color of the divider */
+    height: auto; /* Height will be set automatically */
+    margin: 0 20px; /* Space around the divider */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    form {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add space below form */
+    }
+
+    .social-media {
+        width: 100%; /* Full width for social media on small screens */
+    }
+
+    .divider {
+        display: none; /* Hide the divider on small screens */
+    }
+}

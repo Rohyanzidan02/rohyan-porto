@@ -1,0 +1,177 @@
+
+
+/* General Styles */
+.wrapper12 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper12 h4 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Filter Menu Styles */
+/* Filer Menu Styles */
+.filer-menu {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 5px; /* Add padding around the menu */
+  /* background-color: #f8f9fa;  */
+  border-radius: 8px; /* Rounded corners for the menu */
+  
+}
+
+
+.filer-menu button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Slightly larger padding for better touch targets */
+  margin: 2px; /* Add margin for spacing */
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Add transition for box-shadow */
+  font-size: 16px;
+  flex: 1 1 100px;
+   /* Allow buttons to grow and shrink, with a minimum width */
+  max-width: 150px; /* Set a maximum width for buttons */
+  font-weight: 100px; /* Make the font slightly bolder */
+  text-align: center; /* Center text in buttons */
+  position: relative; /* Position relative for the underline effect */
+}
+
+.filer-menu button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+}
+
+.filer-menu button.active {
+  background-color: #0056b3; /* Active button color */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for active button */
+}
+
+
+
+/* Grid Styles */
+.grid12, .web {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 4 columns by default */
+  gap: 15px; /* Space between items */
+  padding: 0 10px; /* Padding for grid */
+}
+
+.item {
+  overflow: hidden; /* Prevent overflow */
+  border-radius: 0; /* No rounded corners */
+  box-shadow: none; /* No shadow */
+  transition: transform 0.3s; /* Smooth scaling effect */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image vertically */
+}
+
+.item img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 2000px; /* Set a maximum width for logos */
+  max-height: 200px; /* Set a maximum height for logos */
+  display: block; /* Remove bottom space */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .grid12, .web {
+      grid-template-columns: repeat(4, 1fr); /* 2 columns for medium screens */
+      
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .filter-menu {
+      flex-direction: column; /* Stack buttons on smaller screens */
+  }
+
+  .filter-menu button {
+      margin: 5px 0; /* Adjust margin for stacked buttons */
+  }
+}
+
+
+/* h3 */
+.h3-porto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+  color: transparent;
+  background: linear-gradient(45deg, #007bff, rgb(0, 247, 255), #ff6b6b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: fadeInUp 0.8s ease-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+}
+
+.h3-porto::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, rgb(0, 247, 255));
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.h3-porto:hover::after {
+  width: 120px;
+  background: linear-gradient(90deg, #ff6b6b, #007bff);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .h3-porto {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+    letter-spacing: 1px;
+  }
+  
+  .h3-porto::after {
+    width: 60px;
+    height: 2px;
+  }
+}
+
+
+
+
+

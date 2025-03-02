@@ -1,0 +1,180 @@
+.lamaran {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: space-between; /* Menyebar konten di antara dua sisi */
+  padding: 40px; /* Ruang di dalam kontainer */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  border-radius: 12px; /* Sudut melengkung yang lebih besar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih dalam */
+  max-width: 1200px; /* Lebar maksimum untuk keseluruhan konten */
+  margin: auto; /* Pusatkan konten */
+}
+
+.container-lamran {
+  flex: 1; /* Mengizinkan konten ini untuk mengambil ruang yang tersedia */
+  margin-right: 30px; /* Jarak antara form dan media sosial */
+}
+
+.lamaran-h1 {
+  text-align: center; /* Pusatkan judul */
+  color: #333; /* Warna teks */
+  margin-bottom: 30px; /* Jarak bawah */
+  font-family: "Kanit", sans-serif; /* Font yang digunakan */
+  font-size: 32px; /* Ukuran font yang lebih besar */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+.input-box {
+  margin-bottom: 25px; /* Jarak bawah untuk setiap input */
+}
+
+.label-prushaan,
+.label-lamaran {
+  display: block; /* Membuat label menjadi block */
+  margin-bottom: 8px; /* Jarak bawah label */
+  font-weight: bold; /* Teks tebal untuk label */
+  color: #555; /* Warna teks label */
+}
+
+.input-posisi {
+  width: 93%; /* Lebar penuh */
+  padding: 14px; /* Ruang di dalam input */
+  border: 1px solid #ddd; /* Garis border */
+  border-radius: 6px; /* Sudut melengkung */
+  font-size: 16px; /* Ukuran font */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transisi untuk border dan bayangan */
+}
+
+.input-posisi:focus {
+  border-color: #007bff; /* Warna border saat fokus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Bayangan saat fokus */
+  outline: none; /* Menghilangkan outline default */
+}
+
+/*view button */
+.view-file-button {
+  width: 100%; /* Full width */
+  padding: 14px; /* Padding inside the button */
+  background-color: #007bff; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Indicate that the button is clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background color and transform */
+  margin-top: 10px; /* Top margin for spacing */
+}
+
+.view-file-button:hover {
+  background-color: rgba; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.view-file-button:disabled {
+  background-color: #ccc; /* Background color when disabled */
+  cursor: not-allowed; /* Indicate that the button cannot be clicked */
+}
+
+
+/* iconn  */
+
+.back-home-button {
+  width: 100%; /* Lebar penuh */
+  padding: 14px; /* Ruang di dalam tombol */
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 6px; /* Sudut melengkung */
+  font-size: 18px; /* Ukuran font */
+  cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  transition: background-color 0.3s, transform 0.2s; /* Transisi untuk warna latar belakang dan transformasi */
+  margin-top: 10px; /* Jarak atas untuk tombol */
+}
+
+.back-home-button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+  transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.back-home-button:disabled {
+  background-color: #ccc; /* Warna latar belakang saat dinonaktifkan */
+  cursor: not-allowed; /* Menunjukkan bahwa tombol tidak dapat diklik */
+}
+
+/* socila media */
+
+.social-container {
+  flex: 0 0 300px; /* Lebar tetap untuk bagian media sosial */
+  background-color: #f9f9f9; /* Warna latar belakang untuk media sosial */
+  padding: 25px; /* Ruang di dalam media sosial */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+.social-media h2 {
+  margin-bottom: 15px; /* Jarak bawah untuk judul */
+  color: #333; /* Warna teks judul */
+  font-size: 22px; /* Ukuran font judul */
+  font-weight: bold; /* Teks tebal untuk judul */
+}
+
+.social-media p {
+  margin-bottom: 20px; /* Jarak bawah untuk paragraf */
+  color: #666; /* Warna teks paragraf */
+  font-size: 15px; /* Ukuran font paragraf */
+  line-height: 1.5; /* Jarak antar baris untuk keterbacaan yang lebih baik */
+}
+
+.social-media ul {
+  list-style: none; /* Menghilangkan bullet point */
+  padding: 0; /* Menghilangkan padding */
+  display: flex; /* Menggunakan flexbox untuk daftar */
+  justify-content: flex-start; /* Menyusun item ke kiri */
+  flex-wrap: wrap; /* Membungkus item jika tidak muat dalam satu baris */
+}
+
+.social-media li {
+  margin-right: 20px; /* Jarak antara ikon media sosial */
+}
+
+.social-media a {
+  color: #007bff; /* Warna link */
+  font-size: 28px; /* Ukuran ikon */
+  transition: color 0.3s, transform 0.2s; /* Transisi untuk warna dan transformasi */
+}
+
+.social-media a:hover {
+  color: #0056b3; /* Warna saat hover */
+  transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Tambahan untuk responsivitas */
+@media (max-width: 768px) {
+  .lamaran {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar kecil */
+    align-items: center; /* Pusatkan konten */
+  }
+
+  .container-lamran {
+    margin-right: 0; /* Menghilangkan margin kanan */
+    margin-bottom: 20px; /* Jarak bawah untuk kontainer lamaran */
+    width: 100%; /* Lebar penuh untuk kontainer lamaran */
+  }
+
+  .social-container {
+    width: 100%; /* Lebar penuh untuk media sosial */
+    margin-top: 20px; /* Jarak atas untuk media sosial */
+  }
+
+  .social-media {
+    text-align: center; /* Pusatkan teks di media sosial */
+  }
+
+  .social-media ul {
+    justify-content: center; /* Pusatkan ikon media sosial */
+  }
+
+  .social-media li {
+    margin-right: 15px; /* Jarak antara ikon media sosial */
+  }
+}
+

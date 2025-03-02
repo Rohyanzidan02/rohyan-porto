@@ -1,0 +1,108 @@
+#about {
+    background-color: #eaedef;
+    position: relative;
+    font-size: 1.2rem;
+  }
+  #about > .wrapper {
+    margin: auto;
+    width: 50%;
+  }
+  #about > .wrapper > h3 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    color: #333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  #about > .wrapper > p {
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  #about > .wrapper > h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 5px;
+    color: #333;
+  }
+
+  /* butoon link to profile  */
+/* Gaya umum untuk #profile */
+/* Gaya untuk #profile */
+#profile {
+  display: flex; /* Menggunakan Flexbox */
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  justify-content: center; /* Memusatkan konten secara vertikal */
+  align-items: center; /* Memusatkan konten secara horizontal */
+  margin-top: 10px; /* Jarak atas dari #about */
+}
+
+/* Gaya untuk daftar */
+#profile ul {
+  list-style-type: none; /* Menghilangkan bullet */
+  padding: 0; /* Menghilangkan padding default */
+  margin: 0; /* Menghilangkan margin default */
+}
+
+/* Gaya untuk item daftar */
+#profile ul li {
+  margin: 20px 0; /* Jarak antar item */
+}
+
+/* Gaya untuk tombol */
+#profile ul li button {
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghilangkan border default */
+  padding: 10px 20px; /* Ruang di dalam tombol */
+  border-radius: 5px; /* Sudut melengkung */
+  font-size: 1rem; /* Ukuran font */
+  cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+  transition: background-color 0.3s, transform 0.3s; /* Transisi halus */
+}
+
+/* Efek hover untuk tombol */
+#profile ul li button:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Media query untuk responsivitas */
+@media only screen and (max-width: 768px) {
+  #profile {
+      max-width: 99%; /* Lebar maksimum lebih kecil untuk layar kecil */
+  }
+}
+
+
+
+
+  /* skill */
+  .skills {
+    text-align: center;
+  }
+  .skills > svg {
+    display: inline-block;
+    color: #74797e;
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .skills > svg:hover {
+    color: #aa392d;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #about > .wrapper {
+      width: 80%;
+    }
+  }

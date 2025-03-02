@@ -1,0 +1,90 @@
+header {
+    height: 100vh;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 5px;
+    background-image: url(../assets/background.gif); /* Pastikan ini diaktifkan */
+    background-size: cover; /* Atau gunakan contain jika ingin gambar utuh */
+    background-position: center center; /* Memastikan gambar berada di tengah */
+    display: flex;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > img {
+    width: 150px; /* Lebar gambar */
+    height: 150px; /* Tinggi gambar, sama dengan lebar untuk membuatnya bulat */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.header-jumbotron > img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat di-hover */
+}
+
+.header-jumbotron > h3 {
+    color: #fff;
+    margin: 30px 0px 0px 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px black;
+}
+
+.header-jumbotron > p {
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    font-size: 1.2rem;
+    font-family: roboto;
+}
+
+.socialMedia {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+}
+
+.socialMedia > a {
+    background-color: #222831;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia > a > svg {
+    height: 30px;
+    width: auto;
+}
+
+.socialMedia > a:hover {
+    background-color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+    .socialMedia > a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .socialMedia > a > svg {
+        height: 30px;
+        width: auto;
+    }
+}

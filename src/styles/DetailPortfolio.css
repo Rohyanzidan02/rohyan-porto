@@ -1,0 +1,80 @@
+#detail-portfolio > .wrapper {
+  width: 60%;
+  margin: 0 auto; /* Center the wrapper */
+  text-align: center; /* Center text within the wrapper */
+}
+
+#detail-portfolio > .wrapper > img {
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#detail-portfolio > .wrapper > p.skill {
+  font-size: 1.5rem;
+  color: black;
+  margin: 1rem 0; /* Add some margin for spacing */
+}
+
+#detail-portfolio > .wrapper > p.deskripsi {
+  font-size: 1.5rem; /* Default font size */
+  color: black; /* Text color */
+  margin: 1rem 0; /* Add some margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #detail-portfolio > .wrapper > p.deskripsi {
+      font-size: 1.2rem; /* Smaller font size for smaller screens */
+      margin: 0.5rem 0; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #detail-portfolio > .wrapper > p.deskripsi {
+      font-size: 1rem; /* Even smaller font size for very small screens */
+      margin: 0.5rem 0; /* Maintain margin for spacing */
+  }
+}
+
+/* Responsive Video Container */
+
+
+/* Button Styles */
+#button-porto {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the buttons */
+  gap: 2rem; /* Increase space between buttons */
+  margin-top: 2rem; /* Add some margin above the buttons */
+}
+
+#button-porto ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+#button-porto li {
+  display: inline; /* Display list items inline */
+}
+
+#button-porto button {
+  padding: 0.5rem 1rem; /* Add padding for buttons */
+  font-size: 1rem; /* Set font size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007BFF; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+  margin: 0 1rem; /* Add horizontal margin to buttons */
+}
+
+#button-porto button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+#button-porto button:active {
+  transform: scale(0.95); /* Slightly shrink button on click */
+}

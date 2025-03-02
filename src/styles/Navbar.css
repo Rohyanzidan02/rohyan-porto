@@ -1,0 +1,136 @@
+nav {
+  background-color: rgba(34, 111, 189, 0.8); /* Warna latar belakang dengan transparansi */
+  color: #fff; /* Warna teks */
+  position: sticky; /* Posisi sticky */
+  top: 0; /* Menempel di atas */
+  z-index: 100; /* Pastikan tetap di atas elemen lainnya */
+  text-transform: uppercase; /* Teks menjadi huruf kapital */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */
+  backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+}
+nav > .wrapper {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Increased padding for better spacing */
+}
+
+.logo {
+  display: flex; /* Flexbox for logo alignment */
+  align-items: center; /* Center logo vertically */
+}
+
+.logo > a {
+  color: #fff; /* Logo text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.8rem; /* Larger font size for logo */
+  font-weight: 900; /* Bold font weight */
+  letter-spacing: 2px; /* Adjust letter spacing */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.logo > a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.logo > a > img {
+  height: 40px; /* Logo image height */
+  margin-right: 10px; /* Space between image and text */
+  transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.logo > a:hover > img {
+  transform: translateX(-5px); /* Move image slightly on hover */
+}
+
+.menu {
+  width: 35%; /* Width of the menu */
+}
+
+.menu > ul {
+  display: flex; /* Flexbox for menu items */
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  justify-content: space-between; /* Space between menu items */
+}
+
+.menu > ul > li > a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Menu item text color */
+  padding: 10px 15px; /* Padding for menu items */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.menu > ul > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  color: #ffcc00; /* Change text color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav > .wrapper > button {
+  cursor: pointer; /* Pointer cursor for button */
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioning for the button */
+  right: 20px; /* Right alignment */
+  top: 10px; /* Top alignment */
+  border: none; /* Remove border */
+  background-color: transparent; /* Transparent background */
+  padding: 0; /* Remove padding */
+}
+
+nav > .wrapper > button > svg {
+  color: #fff; /* Icon color */
+  font-size: 30px; /* Icon size */
+}
+
+
+
+  /* responsif mengatur ukuran navbar  */
+  
+  @media only screen and (max-width: 1000px) {
+    .menu > ul {
+        display: none; /* Sembunyikan menu secara default */
+    }
+    .menu.tampil > ul {
+        display: flex; /* Tampilkan menu saat kelas 'tampil' ditambahkan */
+    }
+    .menu {
+        text-align: right; /* Posisikan teks ke kanan */
+    }
+    nav > .wrapper > button {
+        display: inline; /* Tampilkan tombol */
+    }
+    .menu > ul {
+        flex-direction: column; /* Menu dalam kolom */
+        background-color: rgba(34, 111, 189, 0.8); /* Warna biru dengan transparansi */
+        backdrop-filter: blur(10px); /* Efek buram */
+        width: 100%; /* Lebar penuh */
+        position: fixed; /* Posisi tetap */
+        top: 60px; /* Jarak dari atas */
+        left: 0; /* Jarak dari kiri */
+        z-index: 100; /* Pastikan menu di atas elemen lainnya */
+    }
+    .menu > ul > li {
+        text-align: left; /* Posisikan teks ke kiri */
+        cursor: pointer; /* Tunjukkan bahwa item dapat diklik */
+    }
+    .menu > ul > li > a {
+        display: inline-block; /* Tampilkan sebagai blok inline */
+        padding: 15px 20px 15px 50px; /* Padding untuk item menu */
+        width: 100%; /* Lebar penuh untuk tautan */
+        color: white; /* Warna teks */
+        text-decoration: none; /* Hapus garis bawah */
+    }
+    .menu > ul > li > a:hover {
+        background-color: rgba(34, 111, 189, 0.6); /* Warna latar belakang saat hover */
+    }
+
+    .logo > a {
+      font-size: 0rem; /* Larger font size for logo */
+    }
+  
+    
+}
+
+  

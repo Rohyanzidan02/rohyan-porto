@@ -1,0 +1,123 @@
+/* Certifikat.css */
+
+/* Styles for Certifikat section */
+#portfolio .certifikat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  gap: 20px; /* Jarak antar item */
+}
+
+#portfolio .certifikat .item {
+  overflow: hidden;
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+  transition: transform 0.3s; /* Transisi saat hover */
+}
+
+#portfolio .certifikat .item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#portfolio .certifikat .item img {
+  width: 100%;
+  height: auto; /* Memastikan gambar responsif */
+  display: block; /* Menghilangkan spasi di bawah gambar */
+}
+
+/* Styles for Organisasi section */
+#portfolio .organisasi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  gap: 20px; /* Jarak antar item */
+  margin-top: 20px; /* Jarak atas untuk memisahkan dari Certifikat */
+}
+
+#portfolio .organisasi .item {
+  overflow: hidden;
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+  transition: transform 0.3s; /* Transisi saat hover */
+}
+
+#portfolio .organisasi .item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#portfolio .organisasi .item img {
+  width: 100%;
+  height: auto; /* Memastikan gambar responsif */
+  display: block; /* Menghilangkan spasi di bawah gambar */
+}
+
+/* Media query untuk responsivitas */
+@media only screen and (max-width: 768px) {
+  #portfolio .certifikat {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lebih kecil untuk layar kecil */
+  }
+  
+  #portfolio .organisasi {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lebih kecil untuk layar kecil */
+  }
+}
+/* Styles for Certifikat section */
+#portfolio.certifikat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  gap: 20px; /* Jarak antar item */
+}
+
+#portfolio .certifikat .item {
+  overflow: hidden;
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+  transition: transform 0.3s; /* Transisi saat hover */
+}
+
+#portfolio .certifikat .item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#portfolio .certifikat .item img {
+  width: 100%;
+  height: auto; /* Memastikan gambar responsif */
+  display: block; /* Menghilangkan spasi di bawah gambar */
+}
+
+
+/* Styles for Organisasi section */
+#portfolio .organisasi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsif */
+  gap: 20px; /* Jarak antar item */
+  margin-top: 20px; /* Jarak atas untuk memisahkan dari Certifikat */
+}
+
+#portfolio .organisasi .item {
+  overflow: hidden;
+  border-radius: 10px; /* Sudut melengkung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+  transition: transform 0.3s; /* Transisi saat hover */
+}
+
+#portfolio .organisasi .item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+#portfolio .organisasi .item img {
+  width: 100%;
+  height: auto; /* Memastikan gambar responsif */
+  display: block; /* Menghilangkan spasi di bawah gambar */
+}
+
+/* Media query untuk responsivitas */
+@media only screen and (max-width: 768px) {
+  #portfolio .certifikat {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lebih kecil untuk layar kecil */
+  }
+  
+  #portfolio .organisasi {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lebih kecil untuk layar kecil */
+  }
+}
+
+

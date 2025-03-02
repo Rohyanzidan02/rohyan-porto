@@ -1,0 +1,259 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.pembungkus {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/coba1.gif);
+    /* background-image: url(../assets/background.gif); */
+    
+}
+/* Animasi muncul dari atas dengan efek bounce */
+@keyframes slideInBounce {
+    0% {
+        opacity: 0; /* Mulai dari transparan */
+        transform: translateY(-50px); /* Mulai dari posisi lebih tinggi */
+    }
+    60% {
+        opacity: 1; /* Menjadi terlihat */
+        transform: translateY(10px); /* Sedikit turun */
+    }
+    80% {
+        transform: translateY(-5px); /* Sedikit naik kembali */
+    }
+    100% {
+        transform: translateY(0); /* Kembali ke posisi normal */
+    }
+}
+
+.my {
+    margin-top: 130px; /* Jarak atas untuk teks portfolio */
+    animation: slideInBounce 1s ease forwards; /* Menambahkan animasi slideInBounce */
+}
+
+.portfolio-title {
+    font-size: 36px; /* Ukuran font yang lebih besar */
+    color: white; /* Pastikan warna teks tetap putih */
+    /* Hapus animasi perubahan warna */
+}
+
+.loading-container {
+    text-align: center; /* Pusatkan teks di dalam loading-container */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    width: 200px;
+    height: 200px;
+    border: 4px solid transparent; /* Menggunakan transparent untuk border */
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Bayangan untuk kedalaman */
+    transition: border-color 0.3s ease; /* Transisi halus untuk perubahan warna */
+}
+
+.ring:nth-child(1) {
+    border-bottom-width: 8px;
+    border-color: rgb(255, 255, 255);
+    animation: rotate1 2s linear infinite;
+}
+
+.ring:nth-child(2) {
+    border-right-width: 8px;
+    border-color: rgb(0, 247, 255);
+    animation: rotate2 2s linear infinite;
+}
+
+.ring:nth-child(3) {
+    border-top-width: 8px;
+    
+    border-color: rgb(225, 0, 225);
+    animation: rotate3 2s linear infinite;
+}
+
+.welcome {
+    color: white;
+    font-size: 24px; /* Ukuran font yang lebih besar */
+    position: absolute; /* Memposisikan teks di tengah */
+    text-align: center; /* Pusatkan teks */
+    z-index: 10; /* Pastikan teks di atas elemen lainnya */
+}
+/* hello */
+.typing {
+    display: inline-block; /* Make sure the text is inline */
+    border-right: 2px solid white; /* Cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide the overflow */
+    animation: typing 3s steps(10, end), blink-caret 0.75s step-end infinite; /* Typing and blinking cursor */
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 20%; /* End with full width */
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Invisible caret */
+    }
+    50% {
+        border-color: white; /* Visible caret */
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+.my {
+    margin-top: 130px; /* Jarak atas untuk teks portfolio */
+
+}
+
+.portfolio-title {
+    font-size: 36px; /* Ukuran font yang lebih besar */
+    animation: colorChange 3s infinite; /* Menambahkan animasi perubahan warna */
+}
+
+/* Animasi perubahan warna */
+@keyframes colorChange {
+    0% { color: white; }
+    25% { color:  rgb(225, 0, 225) } /* Merah */
+    50% { color: rgb(0, 247, 255); } /* Hijau */
+    75% { color:  rgb(0, 255, 13); } /* Biru */
+    100% { color: white; }
+}
+
+/* GLOWING BUTTON WITH HOVER EFFECTS */
+.home-button {
+    /* Basic Button Styling */
+    display: inline-block;
+    margin: 20px 0;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* Positioning & Effects */
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    transition: transform 0.2s, color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Color Layer */
+.home-button::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 12px;
+    transition: background-color 0.3s;
+
+    
+    
+}
+
+/* Glowing Gradient Layer */
+.home-button::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        white, rgb(225, 0, 225), white, rgb(0, 255, 13),
+        rgb(0, 247, 255), rgb(0, 255, 13), rgb(225, 0, 225), rgb(0, 247, 255)
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s;
+    border-radius: 12px;
+    opacity: 0;
+}
+
+/* Glowing Animation */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Hover Effects */
+.home-button:hover {
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.home-button:hover::after {
+    background-color: rgb(19, 19, 19); /* Warna lebih gelap saat hover */
+    
+}
+
+.home-button:hover::before {
+    opacity: 1; /* Munculkan glow saat hover */
+}
+
+/* Active State Effects */
+.home-button:active {
+    transform: translateY(0); /* Reset posisi saat diklik */
+    color: black; /* Teks berubah hitam saat diklik */
+}
+
+.home-button:active::after {
+    background: transparent; /* Hilangkan warna dasar saat diklik */
+}

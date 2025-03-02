@@ -1,0 +1,97 @@
+/* Footer Styles */
+footer {
+  background-color: #39404a; /* Background color of the footer */
+  text-align: center; /* Center the text */
+  color: #fff; /* Text color */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  padding: 20px; /* Add padding for space inside the footer */
+}
+
+/* Footer Section Styles */
+footer > div {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-size: 15px; /* Font size for readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  footer {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  footer > div {
+    font-size: 10px; /* Change font size to 10px on smaller screens */
+  }
+}
+
+/* Copyright Styles */
+#copy {
+  color: white; /* Text color */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  grid-column: span 2; /* Ensure the copy element spans two columns */
+  font-size: 10px; /* Font size for copyright notice */
+  text-align: center; /* Center the copyright text */
+  margin-top: 0; /* Add some space above the copyright text */
+}
+
+/* Link Styles */
+footer a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+footer a:hover {
+  color: #00bcd4; /* Change color on hover */
+}
+
+/* Hobby Section Styles */
+.hobi {
+  text-align: center; /* Center the text in the hobi section */
+  margin: 0 auto; /* Center the hobi section itself */
+  grid-column: span 2; /* Ensure the hobi section spans two columns */
+}
+
+.hobi h1 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Icon Hobby Styles */
+.icon-hobi {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.icon-hobi ul {
+  text-align: center; /* Center text in the ul */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.icon-hobi li {
+  display: flex; /* Use flexbox for icon and text alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally within the li */
+  margin: 0 10px; /* Space between icon and text */
+  text-align: center; /* Center text within the li */
+}
+
+/* Responsive Styles for Hobby Section */
+@media (max-width: 600px) {
+  .icon-hobi {
+    justify-content: center; /* Keep items centered */
+  }
+
+  .icon-hobi ul {
+     /* Keep ul as inline-flex for horizontal alignment */
+    flex-direction: row; /* Keep items in a row */
+  }
+
+  .icon-hobi li {
+    margin: 0 5px; /* Space between items */
+  }
+}

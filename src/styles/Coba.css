@@ -1,0 +1,106 @@
+/* Coba.css */
+
+/* Base styles */
+
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengatur kolom responsif */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon svg {
+    font-size: 3rem;
+    color: rgb(107, 96, 96);
+    transition: 0.5s;
+}
+
+.card:hover .card-icon svg {
+    color: rgb(0, 247, 255);
+    filter: drop-shadow(0 0 10px rgb(0, 247, 255));
+}
+
+.card-title1 {
+    color: rgb(107, 96, 96);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card-detail {
+    color: rgba(20, 4, 4, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-section {
+        grid-template-columns: repeat(2, 1fr); /* Satu kolom penuh lebar di layar kecil */
+    }
+    
+    .card {
+        padding: 1.5rem 1rem; /* Padding untuk kartu di layar kecil */
+    }
+    
+    .card-title {
+        font-size: 1.3rem; /* Ukuran font judul di layar kecil */
+    }
+    
+    .card-detail {
+        font-size: 0.85rem; /* Ukuran font detail di layar kecil */
+    }
+}
+
+@media (min-width: 769px) {
+    .card-section {
+        grid-template-columns: repeat(4, 1fr); /* Empat kolom di layar besar */
+    }
+}
